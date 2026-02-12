@@ -18,11 +18,7 @@ from .dapo import DAPORewardManager
 from .naive import NaiveRewardManager
 from .prime import PrimeRewardManager
 from .length_dapo import LengthDAPORewardManager
-from .length_prob_dapo import LengthProbDAPORewardManager
-from .length_chunk_dapo import LengthChunkDAPORewardManager
-from .length_distinct_dapo import LengthDistinctDAPORewardManager
-from .distinct_dapo import DistinctDAPORewardManager
 
 # Note(haibin.lin): no need to include all reward managers here in case of complicated dependencies
 __all__ = ["BatchRewardManager", "DAPORewardManager", "NaiveRewardManager", "PrimeRewardManager", "register", "get_reward_manager_cls",
-           "LengthDAPORewardManager", "LengthProbDAPORewardManager", "LengthChunkDAPORewardManager", "LengthDistinctDAPORewardManager", "DistinctDAPORewardManager"]
+           "LengthDAPORewardManager"]
